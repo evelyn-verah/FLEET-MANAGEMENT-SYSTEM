@@ -413,7 +413,7 @@ public class MILEAGE extends javax.swing.JFrame {
         String selectedVehicle_id = this.vehicle_idCombobBox.getSelectedItem().toString();
         String selectedDriver_id = this.driver_idComboBox.getSelectedItem().toString();
         try {
-
+             //new method
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/fleetdb", "root", "");
             String sql = "Insert into mileage(vehicle_id,startpoint,driver_id,endpoint,startmileage,endmileage,starttime,endtime)VALUES (?,?,?,?,?,?,?,?,)";
